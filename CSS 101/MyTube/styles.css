@@ -1,0 +1,164 @@
+header {
+    background-image: url(https://designtemplate.tech/images/Epic%20Fire%20Flame%20Video%20Animation-HD.webp);
+    width: 100%;
+    padding: 20px 0;
+}
+.header-container {
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+nav {
+    margin-left: 10px;
+}
+h1 {
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input[type="search"] {
+    height: 30px;
+    border-radius: 5px;
+    width: 250px;
+    border: 2px solid black;
+    margin-left: 1%;
+}
+a {
+    text-decoration: none;
+    color: rgb(238, 233, 233);
+    font-size: larger;
+    padding-right: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+a:hover {
+    color: firebrick;
+    text-decoration: underline;
+}
+h3 {
+    top: 0;
+    color: whitesmoke;
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h4 {
+    text-decoration: underline;
+}
+body {
+    background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.main_content {
+    text-align: center;
+    width: 80%;
+    align-content: center;
+    margin: auto;
+    background-color:rgba(0, 0, 0, 0.3);
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+.video, .player iframe{
+    box-shadow: 0 0 0 15px black;
+    background-color: black;
+    margin: 3%;
+    border-radius: 7px;
+}
+.video {
+    display: inline-block;
+}
+.video:hover {
+    background-color:rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+iframe {
+    border-radius: 5px;
+}
+iframe:hover {
+    border-radius: 0;
+}
+.player, .description {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.player {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1%;
+    padding-bottom: 5%;
+
+}
+.description {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1%;
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+form {
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 80%;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin: auto;
+}
+form, .description, .main_content, input[type="submit"] {
+    margin: 5% auto;
+}
+input[type="submit"] {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+    width: 40%;
+}
+input[type="submit"]:hover {
+    background-color: black;
+}
+form input[type="file"], file select{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+input[type="text"], textarea{
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+select {
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+input[type="radio"] {
+    cursor: pointer;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+input[type="radio"]:checked {
+    background-color: rgb(0, 0, 0, 0.7);
+    border: 2px solid black;
+}
+footer, .main_content {
+    color: whitesmoke;
+    padding-bottom: 2%;
+}

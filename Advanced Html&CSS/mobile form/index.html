@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Form to know everything about you.">
+    <link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title> Mobile Form </title>
+    </head>
+    <body>
+        <header>
+            <div class="left-header">
+                <a href="#" class="tab"><span>&#9776</span></a>
+                <h1>Contacts</h1>
+            </div>
+            <div class="right-header">
+                <span class="search">&#x1F50D</span>
+                <span class="more">&#x22EE;</span>
+            </div>
+        </header>
+        <form action="x" method="post">
+            <div class="name">
+                <img src="https://img.icons8.com/?size=100&id=7819&format=png&color=4D4D4D" alt="">
+                <label for="input"></label>
+                <input type="text" class="name" placeholder="Name">
+            </div>
+            <div class="phone">
+                <img src="https://img.icons8.com/?size=100&id=78382&format=png&color=4D4D4D" alt="phone">
+                <input type="tel" placeholder="Phone Number">
+                <select class="label" name="label" id="lable">
+                    <option value="">Label</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="address">
+                <img src="https://img.icons8.com/?size=100&id=7880&format=png&color=4D4D4D" alt="location icon">
+                <input type="text" placeholder="Address">
+            </div>
+            <div class="city">
+                <input type="text" class="city-input" placeholder="City">
+            </div>
+            <div class="state">
+                <select name="state" id="state">
+                    <option value="">State</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Texas">Texas</option>
+                    <option value="New York">New York</option>
+                    <option value="California">California</option>
+                </select>
+                <input type="text" class="zip" placeholder="Zip">
+            </div>
+            <div class="email">
+                <img src="https://img.icons8.com/?size=100&id=mtfWz20b5AxB&format=png&color=4D4D4D" alt="email symbol">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="birthday">
+                <img src="https://img.icons8.com/?size=100&id=5VtaSw8kFCqv&format=png&color=4D4D4D" alt="birthday cake">
+                <input type="date" name="birthday" id="birthday">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

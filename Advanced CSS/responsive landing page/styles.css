@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    background-color: rgb(231, 231, 231);
+
+}
+header {
+    background-image: url(https://media.licdn.com/dms/image/v2/C4E1BAQE9kwwxkd5aAw/company-background_1536_768/company-background_1536_768/0/1523661309394?e=2147483647&v=beta&t=kNtjACppQEp5b7QnBGFOTcrL4ufRhNstTJq8WmhSjVg);
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+
+    "title"
+    "header-text "
+    "button";
+}
+.h1 {grid-area: title;}
+header > p {grid-area: header-text;}
+
+header > h1, header > p {
+    padding: 0 140px;
+}
+button {
+    color: white;
+    background-color: red;
+    width: 10%;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    grid-area: button;
+}
+img {
+    height: 100px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 0px;
+}
+.info {
+    background-color: rgb(231, 231, 231);
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "info-head info-head"
+    "info1 info2";
+    padding: 0 200px 25px;
+}
+.info > h4 {grid-area: info-head;}
+.info1 {grid-area: info1;}
+.info2 {grid-area: info2;}
+.programs {
+    background-color:rgb(47, 31, 135);
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    color: whitesmoke;
+}
+.web-dev , .ios-dev, .android-dev {
+    color: black;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    text-align: center;
+}
+.web-dev {grid-column: 3;}
+.ios-dev {grid-column: 4;}
+.android-dev {grid-column: 5;}
+
+.statement {
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+    padding: 20px;
+}
+.bottom {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(46, 31, 134);
+    color: whitesmoke;
+}
+.contact-us {
+    grid-column: 1;
+    background-color: rgb(41, 54, 158);
+    padding: 200px;
+}
+.epic {
+    grid-column: 2;
+    background-color: rgb(46, 31, 134);
+    padding: 200px;
+}
+footer {
+    background-color: black;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    grid-template-rows: 1fr;
+}
+.yaah {grid-column: 1; text-align: center;}
+.yeet {grid-column: 2; text-align: center;}
+@media (max-width: 700px) {
+    .info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "info-head info-head info-head"
+        "info1 info1 info1"
+        "info2 info2 info2";
+        padding: 0 200px 25px;
+    }
+    .info > h4 {grid-area: info-head;}
+    .info1 {grid-area: info1;}
+    .info2 {grid-area: info2;}
+    .programs {
+        background-color:rgb(47, 31, 135);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+        color: whitesmoke;
+    }
+    .info > h4 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .web-dev , .ios-dev, .android-dev {
+        border-radius: 10px;
+        text-align: center;
+    }
+    .web-dev {grid-row: 1; grid-column: 2;}
+    .ios-dev {grid-row: 2;grid-column: 2;}
+    .android-dev {grid-row: 3; grid-column: 2;}
+    .bottom {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: rgb(46, 31, 134);
+        color: whitesmoke;
+        text-align: center;
+    }
+    .contact-us{grid-row: 1;}
+    .epic{
+        grid-column: 1; grid-row: 2;}
+
+}

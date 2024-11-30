@@ -1,0 +1,26 @@
+.box-1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+.box-2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes  {
+    0% {background-color: red;}
+    33% {background-color: aliceblue;}
+    66% {background-color:  blue;}
+    99% {background-color: red;}
+}

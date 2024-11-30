@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="descrition" content="My website">
+        <title> html registration </title>
+    </head>
+
+    <body>
+        <h1>Registration Form</h1>
+        <hr>
+        <h3>Provide your information</h3>
+        <form action="get" target="/test.php">
+            <label for="name">Name*</label><br>
+            <input type="name" id="name" placeholder="Name" required>
+            <br><br>
+
+            <label for="email">Email*</label><br>
+            <input type="email" id="email" placeholder="email" required>
+            <br><br>
+
+            <label for="telephone">Phone Number:</label><br>
+            <input type="text" size="1" placeholder="123"> - 
+            <input type="password" size="1"  placeholder="456"> - 
+            <input type="password" size="2" placeholder="7890">
+            <br><br>
+
+            <label for="Birth">DOB*</label><br>
+            <input type="date" name="Birth" id="Birth" required>
+            <br><br>
+
+            <label for="Gender">Gender:</label> <br>
+            <input type="radio" name="Gender" id="Male"> Male 
+            <input type="radio" name="Gender" id="Female"> Female 
+            <input type="radio" name="Gender" id="Other"> Other 
+            <br><br>
+
+            <label for="House">Household Size</label><br>
+            <input type="number" min="1" max="20" size="2" name="House" id="House" placeholder="1">
+            <br><br>
+
+            <label for="Annual Income">Annual Income</label><br>
+            <select name="size" id="size">
+                <option value=">Greater than $100k">Greater than $100k</option>
+                <option value="Between $40k-$100k"> Between $40k-$100k</option>
+                <option value="Less than $40k" selected>Less than $40k </option>
+            </select>
+            <br><br>
+
+            <label for="Message">Message:</label><br>
+            <textarea 
+                name="Message" 
+                id="Message" 
+                placeholder="add message here..." 
+                rows="8"
+                cols="60"
+            ></textarea>
+            <br><br>
+            <label for="Password">Password*</label><br>
+            <input type="password" required>
+            <br><br>
+            <label for="ConfirmPassword">Confirm Password*</label><br>
+            <input type="password" required>
+            <br><br>
+
+            <label for="TOS"></label>
+            <input type="checkbox" name="TOS" id="TOS"> By Signing up, you agree to the <a href="/tos.html">Terms of Service</a>
+            
+            <br><br>
+            <input type="submit">
+        </form>
+ 
+        
+    </body>
+
+</html>

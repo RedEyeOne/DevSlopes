@@ -1,0 +1,257 @@
+header > .left-head> img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50pc;
+}
+header > .left-head {
+    display: flex;
+}
+header > .left-head > span {
+    align-self: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 5px;
+    display: none; 
+}
+header > .right-head > a {
+    display: inline;
+    color: slategray;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 600;
+}
+header > .right-head > a:hover {
+    color: black;
+}
+h1, h4{
+    font-weight: 100; 
+}
+h1, h4 {
+    font-size: xxx-large;
+}
+section {
+    padding: 0 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.about p{
+    margin: 0 140px 75px 140px;
+}
+.team h4 {
+    color: slategray;
+}
+.team p{
+    color: slategrey;
+    margin: 0 100px 75px 100px;
+}
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.project1 > img, .project2 > img, .project3 > img {
+    
+    width: 100%;
+    height: 300px;
+    align-self: center;
+
+}
+.project1, .project2, .project3 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: slategray;
+}
+.project1 h3, .project2 h3, .project3 h3{
+    color: black;
+}
+.staff {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+.members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    flex: 1 1 25%;
+}
+.person >img {
+    width: 100%;
+    height: 200px;
+}
+.right-arrow > img, .left-arrow > img {
+    display: absolute;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    justify-content: center;
+}
+.right-arrow:hover, .left-arrow:hover {
+    filter: opacity(.5);
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    grid-gap: 20px;
+    padding: 0 0px; 
+    font-size: large;
+    margin: 20px;
+}
+.employee-socials > img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50pc;
+}
+.employee-socials > img:hover {
+    filter:opacity(0.5);
+}
+h6 {
+    font-size: large;
+    color: whitesmoke;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+footer a {
+    color: slategray;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: smaller;
+}
+.email a {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+footer {
+    color: slategray;
+    background-color: black;
+}
+.socials, .link {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contact-info {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+
+}
+.link:hover {
+    filter: opacity(0.5);
+}
+.link > a{
+    align-self: center;
+    justify-content: center;
+}
+.link > img {
+    width: 50px;
+}
+.copyright {
+    padding: 0 100px 30px 100px;
+}
+@media (max-width: 768px) {
+    .options {
+        display: inline;
+    }
+    header > .right-head > a {
+        display: none;
+    }
+    .about p{
+        margin: 0 50px 75px 50px;
+    }
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .project1 > img, .project2 > img, .project3 > img {
+        width: 150px;
+        height: 150px;
+        align-self: center;
+    }
+    .project1, .project2, .project3 {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        color: slategray;
+    }
+    .project1 h3, .project2 h3, .project3 h3{
+        color: black;
+        width: 100%;
+    }
+    .project-text {
+        margin-left: 30px;
+    }
+    .team p{
+        margin: 0 40px 50px 40px;
+    }
+    .person > img {
+        width: 180px;
+    }
+    .staff {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 599px) {
+    .portfolio {
+        padding: 0;
+    }
+    .project1, .project2, .project3 {
+        flex-direction: column;
+    }
+    .project1 > img, .project2 > img, .project3 > img {
+        width: 100%;
+        height: auto;
+    }
+    .left-arrow {
+        display: none;
+    }
+    .right-arrow {
+        display: none;
+    }
+    .staff {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .members {
+        padding: 0;
+    }
+    .person {
+        text-align: center;
+    }
+    .person > img {
+        width: 100%;
+        height: auto;
+    }
+    .employee-socials {
+        margin-bottom: 50px;
+    }
+    .socials {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+}

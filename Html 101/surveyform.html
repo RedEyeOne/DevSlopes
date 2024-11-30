@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="descrition" content="My website">
+        <title> Survey Form Exercise </title>
+    </head>
+
+    <body>
+        <h1>Employee Interests Survey Form</h1>
+        <br>
+        <form action="get" target="/survery.php">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <br><br>
+            <label for="department">Department:</label>
+            <input type="text" placeholder="Enter your department" required>
+            <br><br>
+            <label for="about">Tell us a litlle about yourself:</label><br>
+            <textarea name="about" id="about" cols="35" rows="5" placeholder="fix the size for this"></textarea>
+            <br><br>
+            <label for="exercise">Do you exercise at home? </label>
+            <input type="radio" name="exercise" id="yes">Yes 
+            <input type="radio" name="exercise" id="no">No
+            <br><br>
+            <label for="how">How do you like to read about your favorite topics?</label>
+            <br><br>
+            <input type="checkbox" name="how" id="phone">Phone Apps
+            <input type="checkbox" name="how" id="online">Online
+            <input type="checkbox" name="how" id="books">Books
+            <input type="checkbox" name="how" id="magazines">Magazines
+            <br><br>
+            <label for="genre">What is your favorite movie genre?</label>
+            <select name="genre" id="genre">
+                <option value="Horror">Horror</option>
+                <option value="Action">Action</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedy" selected>Comedy</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit form">
+
+    </form>
+
+    </body>
+
+</html>

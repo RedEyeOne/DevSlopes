@@ -1,0 +1,11 @@
+.nav {
+    position: fixed;
+    left: 0;
+    width: 20%
+}
+h2 {
+    background-color: salmon;
+}
+body{
+    margin-left:20%
+}

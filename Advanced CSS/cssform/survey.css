@@ -1,0 +1,30 @@
+body {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231019/pngtree-stunning-space-background-texture-elements-captured-by-nasa-in-high-quality-image_13628509.png);
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+.user_input {
+    margin: 5%;
+}
+h1, h4 {
+    text-align: center;
+}
+input[type="submit"] {
+    color: white;
+    background-color: green;
+    width: 50%;
+    align-content: center;
+    position: relative;
+    left: 25%;
+    margin
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+}
+form {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(221, 160, 221, 0.5);
+}

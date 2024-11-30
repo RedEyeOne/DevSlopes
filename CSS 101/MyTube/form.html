@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="descrition" content="My website">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title> html basics </title>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>MyTube </h1>
+                <input type="search" placeholder="Search">
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/pages/asdfmovies.html">asdfmovies</a>
+                <a href="/pages/how_to_basic.html">How To Basic</a>
+                <a href="/pages/monster_trucks.html">Monster Trucks</a>
+                <a href="/form.html">New Video</a>
+            </nav>
+        </header>
+        <form action="post" target="submit.php">
+            <h3>Upload Video</h3>
+            <h4><label for="video_title">VideoTitle</label></h4>
+            <input type="text" id="video_title" placeholder="Video title">
+            <h4><label for="description">Descritpion</label></h4>
+            <textarea name="description" id="description" cols="60" rows="10" placeholder="Write a description"></textarea>
+            <h4><label for="video">Video</label></h4>
+            <input type="file" name="video" id="video">
+            <h4><label for="collection">Collection</label></h4>
+            <select name="collection" id="collection">
+                <option value="">Choose Collection</option>
+                <option value="asdfmovie">asdfmovie</option>
+                <option value="how_to_basic" >How to Basic</option>
+                <option value="monster_trucks" >Monster Trucks</option>
+            </select>
+            <br><br><br>
+            <h4><label for="Pricacy">Privacy</label></h4>
+            <input type="radio" name="privacy" id="public">
+            <label for="public">Public</label>
+            <input type="radio" name="privacy" id="private">
+            <label for="private">Private</label>
+            <br><br><br>
+            <input type="submit" value="Upload Video">
+        </form>
+        <hr>
+        <footer>
+            &copy; Copyright"
+        </footer>
+    </body>
+</html>

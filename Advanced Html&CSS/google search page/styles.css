@@ -1,0 +1,44 @@
+/* google logo */
+.google {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.g {
+    color: rgb(0, 110, 255);
+}
+.o, .e {
+    color: rgb(253, 17, 17);
+}
+.o2 {
+    color: rgb(218, 214, 0);
+}
+.l {
+    color: rgb(74, 182, 41);
+}
+
+/* search bar */
+.search-bar {
+    width: 50%;
+    position: relative;
+}
+input {
+    margin: 10% 0;
+    height: 35px;
+    width: 100%;
+    border-radius: 5pc;
+}
+.glass {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 3%;
+    top: 44%;
+}
+.mic {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 2%;
+    top: 40%;
+}
