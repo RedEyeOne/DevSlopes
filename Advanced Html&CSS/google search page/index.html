@@ -7,22 +7,91 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title> search page </title>
+    <script src="https://kit.fontawesome.com/2a4e61e323.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <head>
-            <div class="google">
-                <div class="g">G</div>
-                <div class="o">o</div>
-                <div class="o2">o</div>
-                <div class="g">g</div>
-                <div class="l">l</div>
-                <div class="e">e</div>
+        <header>
+            <div class="spaced-grid">
+                <div class="google">
+                    <div class="g">G</div>
+                    <div class="o">o</div>
+                    <div class="o2">o</div>
+                    <div class="g">g</div>
+                    <div class="l">l</div>
+                    <div class="e">e</div>
+                </div>
+                <div class="profile-options">
+                    <a href="more"><img src="https://www.svgrepo.com/show/491625/dots-9.svg" alt="more options"></a>
+                    <img class="pfp" src="https://www.pngkey.com/png/detail/55-556019_awesome-face-epic-smiley-omg-womens-fitted-v.png" alt="pfp">
+                </div>
+                <div class="search-bar">
+                    <input type="text" class="bar" placeholder="search">
+                    <div class="search-bar-icons">
+                        <i class="fa-solid fa-x"></i>
+                        <hr>
+                        <i class="fa-solid fa-magnifying-glass glass"></i>
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                    
+                    <!-- <img class="glass" src="https://www.svgrepo.com/show/7109/search.svg" alt="search icon"> -->
+                    <!-- <img class="mic" src="https://static.vecteezy.com/system/resources/previews/028/766/367/non_2x/google-mic-microphone-icon-symbol-free-png.png" alt="microphone"> -->
+                </div>
             </div>
-            <div class="search-bar">
-                <input type="text" class="bar">
-                <img class="glass" src="https://www.svgrepo.com/show/7109/search.svg" alt="search icon">
-                <img class="mic" src="https://static.vecteezy.com/system/resources/previews/028/766/367/non_2x/google-mic-microphone-icon-symbol-free-png.png" alt="microphone">
+            <div class="spaced-grid">
+                <div class="search-types">
+                    <div class="left-types">
+                        <div class="all">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>All</span>
+                            </a>
+                        </div>
+                        <div class="news">
+                            <a href="#">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <span>News</span>
+                            </a>
+                        </div>
+                        <div class="images">
+                            <a href="#">
+                                <i class="fa-solid fa-image"></i>
+                                <span>Images</span>
+                            </a>
+                        </div>
+                        <div class="videos">
+                            <a href="#">
+                                <i class="fa-solid fa-video"></i>
+                                <span>Videos</span>
+                            </a>
+                        </div>
+                        <div class="shopping">
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Shopping</span>
+                            </a>
+                        </div>
+                        <div class="more">
+                            <a href="#">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <span>More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right-types">
+                        <div class="settings">
+                            <a href="#">
+                                <span>Settings</span>
+                            </a>
+                        </div>
+                        <div class="tools">
+                            <a href="#">
+                                <span>Tools</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </head>
         <section class="search-results-container">
             <div class="result">
@@ -59,6 +128,6 @@
     
             </div>
         </section>
-        <script src="script.js"></script>
+
     </body>
 </html>
