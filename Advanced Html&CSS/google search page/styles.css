@@ -2,7 +2,8 @@
 .spaced-grid {
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: minmax(50px, auto);
     grid-template-areas: "left main right";
     align-items: center;
 }
@@ -55,6 +56,7 @@ input {
     border-radius: 5pc;
     padding-left: 2%;
     font-size: 1rem;
+    color: black;
 }
 .search-bar-icons {
     display: flex;
@@ -64,27 +66,81 @@ input {
     right: 2%;
     top: 30%;
 }
-hr {
-    width: 1px;
-    height: 20px; 
+.search-bar hr {
+    width: 0.063rem;
+    height: 1.25rem; 
     background-color: black;
     border: none; 
-    margin: 0 5px; 
+    margin: 0 0.313rem; 
 }
 .glass {
     color: blue;
 }
 /*  bottom seciton of header  */
 .search-types {
+    padding: 1.6rem 0px;
     grid-area: main;
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     grid-template-rows: 1; 
 }
-.left-types {
-    display: flex;
+.search-types a {
+    color: grey;
+    text-decoration: none;
 }
-.right-types {
+.search-types  a:hover {
+    color: skyblue;
+    border-bottom: 5px solid skyblue;
+    padding-bottom: 1.25rem;
+    /* box-shadow: 0px 1.875rem 0.063rem skyblue; */
+}
+.left-types, .right-types  {
     display: flex;
+    gap: 0.7rem;
+}
+hr.header-bottom-hr {
+    background-color: lightgrey;
+    border: none;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/* show search results */
+.results-time {
+    grid-area: main;
+}
+.search-results-flex-container {
+    text-align: left;
+}
+.search-results-flex-container {
+    grid-area: main;
+}
+.results-time {
+    color: grey;
+}
+/* style posts themselves */
+.results-time p {
+    font-size: 0.875rem;
+}
+.result-link span {
+ font-size: 0.875rem;
+}
+.result-link .site-dir {
+    color: grey;
+}
+.result-link .site-dir i {
+    font-size: 0.5rem;
+}
+.result .page-title a{
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.result .page-title {
+    margin: 0.2rem 0px;
+}
+.result .page-description p {
+    margin: 0;
+    color: grey;
 }
