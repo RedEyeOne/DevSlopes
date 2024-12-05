@@ -1,0 +1,36 @@
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    font-size: .9rem;
+    font-weight: 500;
+}
+.project-logo {
+    width: 10rem;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: grey;
+    align-self: center;
+}
+nav a:hover{
+    color: blue;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.buy-now {
+    margin-left: 2rem;
+    background-color: var(--water);
+}

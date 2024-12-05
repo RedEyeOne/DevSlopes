@@ -1,0 +1,18 @@
+:root {
+    --white: #FFF;
+    --black: #000;
+    --gradient-grey: #b0aebe;
+    --water: rgb(55, 126, 241);
+    font-family: sans-serif;
+}
+button {
+    border: none;
+    width: 7rem;
+    height: 3rem;
+    align-self: center;
+    justify-self: center;
+    border-radius:2pc;
+    color: var(--white);
+    font-weight: 900;
+    background-color: rgb(33, 97, 160);
+}
