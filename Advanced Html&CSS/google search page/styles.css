@@ -93,7 +93,6 @@ input {
     color: skyblue;
     border-bottom: 5px solid skyblue;
     padding-bottom: 1.25rem;
-    /* box-shadow: 0px 1.875rem 0.063rem skyblue; */
 }
 .left-types, .right-types  {
     display: flex;
@@ -121,6 +120,22 @@ hr.header-bottom-hr {
     color: grey;
 }
 /* style posts themselves */
+.results-link-container {
+    display: flex;
+    align-content: center;
+}
+.site-icon {
+    align-self: center;
+    margin-right: .5rem;
+    font-size: 1.65rem;
+}
+.link-header {
+    margin: 0;
+    padding: 0;
+}
+.result {
+    margin-bottom: 2rem;
+}
 .results-time p {
     font-size: 0.875rem;
 }
@@ -144,3 +159,30 @@ hr.header-bottom-hr {
     margin: 0;
     color: grey;
 }
+/* people also ask styles */
+.people-also-ask {
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+h4 {
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+.also-ask {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+.also-ask p, .also-ask i, h4 {
+    margin: 0.75rem 1rem;
+}
+.feedback {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 2rem ;
+    font-style: italic;
+    color: gray;
+    font-size: .85rem;
+}
+
