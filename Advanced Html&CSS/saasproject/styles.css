@@ -2,14 +2,14 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
     align-content: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: white;
+    background-color: transparent;
     font-size: .9rem;
     font-weight: 500;
+    transition: all 0.3s ease;
 }
 .project-logo {
     width: 10rem;
@@ -18,19 +18,176 @@ nav {
 }
 nav a{
     text-decoration: none;
-    color: grey;
+    color: var(--gradient-grey);
     align-self: center;
 }
 nav a:hover{
-    color: blue;
+    color: var(--water);
 }
 nav ul{
     list-style-type: none;
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     align-items: center;
 }
 .buy-now {
     margin-left: 2rem;
     background-color: var(--water);
+}
+
+/* header text  */
+header {
+    display: block;
+    width: 100%;
+    position: relative;
+    
+    height: auto;
+    background-image: url(./saas-project-assets/backgrounds/background-top.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+h1 {
+    font-size: 3rem;
+    max-width: 65%;
+    font-weight: 500;
+    margin: 5rem 0 0 0;
+}
+.header-display-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.header-display-container .flex-container {
+    flex-direction: column;
+}
+.header-clip {
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background-color: var(--white);
+    clip-path: polygon(100% 60%, 100% 100%, 0% 100%);
+    z-index: 0;
+}
+h2 {
+    color: var(--black);
+}
+.header-display-container p, .key-benefits p {
+    color: var(--gradient-grey);
+}
+/* header text buttons */
+.learn-more {
+    margin: 0 2rem;
+    text-decoration: none;
+    color: var(--water);
+}
+.play-img {
+    width: 1.2rem;
+    height: 1.2rem;
+    align-self: center;
+    position: relative;
+    top: 10%;
+}
+.header-buttons {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: left;
+}
+.play-video-button {
+    font-weight: 600;
+    width: 9rem;
+}
+/* header company logos */
+.header-logos {
+    min-width: 60%;
+    z-index: 10;
+}
+.header-logos .small-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 1px solid var(--warm-grey);
+    box-shadow: 0rem 0.3rem 5px 1px var(--warm-grey);
+}
+.header-logos .big-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 1px solid var(--warm-grey);
+    box-shadow: 0rem 0.3rem 5px 1px var(--warm-grey);
+}
+.header-logos .small-bubble img {
+    width: 70%;
+    height: 70%;
+    align-self: center;
+    justify-content: center;
+}
+.header-logos .big-bubble img {
+    width: 60%;
+    height: 60%;
+    align-self: center;
+    justify-content: center;
+}
+.google1 {grid-area: a3;}
+.atlassian {grid-area: a4;}
+.asana {grid-area: a7;}
+.paypal {grid-area: c3;}
+.weave {grid-area: c6;}
+.google2 {grid-area: e4;}
+.calandar {grid-area: e7;}
+
+/* key benefits area */
+.key-benefits {
+    margin-top: 10rem;
+    text-align: center;
+}
+.key-benefits-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+}
+.key-benefits-cards img {
+    max-width: 4rem;
+    margin: 1rem 1rem 0;
+}
+.key-benefits-cards .premium-header {
+    display: flex;
+    justify-content: left;
+}
+.key-benefits-cards .premium-header h4 {
+    margin: 0;
+    padding: 0;
+}
+.key-benefits-cards .premium-header p {
+    align-self: center;
+    color: var(--white);
+    background-color: var(--money);
+    border-radius: 50px;
+    border: 1px solid var(--money);
+}
+.key-benefits-cards .card {
+    width: 23%;
+    box-shadow: -0.1rem 0.5rem 10px .3rem var(--warm-grey);
+}
+.key-benefits-cards h4, .key-benefits-cards p, .key-benefits-cards h5 {
+    padding: 0 1rem;
+}
+.key-benefits-cards p {
+    color: var(--gradient-grey);
+}
+.key-benefits-cards a {
+    text-decoration: none;
+    color: var(--water);
 }

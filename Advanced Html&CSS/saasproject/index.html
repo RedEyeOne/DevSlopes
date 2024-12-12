@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="default.css">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<title> html basics </title>
+	<title> Front End Design </title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="navbar">
                 <div class="project-logo">
                     <img src="./saas-project-assets/project_logo/logo.svg" alt="">
                 </div>
@@ -24,17 +24,89 @@
                     <li><button class="buy-now">Buy Now</button></li>
                 </ul>
             </nav>
-            <div class="header-text-container">
+            <div class="header-display-container">
                 <div class="flex-container">
                     <h1>Empowering teams with the freedom</h1>
-                    <p>own the unlimited power of the web development</p>
-                    <div class="buttons">
-                        <button>
-                            <span>Play Video</span>
+                    <p>Own the unlimited power of the web development</p>
+                    <div class="header-buttons">
+                        <button class="play-video-button">
+                            <img class="play-img" src="https://img.icons8.com/?size=100&id=60450&format=png&color=FFFFFF" alt="white play button">
+                            Play Video
                         </button>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="header-logos grid-container">
+                    <div class="google1 small-bubble">
+                    <img src="./saas-project-assets/logo_icons/google.png" alt="google logo">
+                    </div>
+                    <div class="atlassian big-bubble">
+                        <img src="/saas-project-assets/logo_icons/atlassian.png" alt="atlassian logo">
+                    </div>
+                    <div class="asana big-bubble">
+                        <img src="/saas-project-assets/logo_icons/asana.png" alt="asana logo">
+                    </div>
+                    <div class="paypal big-bubble">
+                        <img src="/saas-project-assets/logo_icons/paypal.jpg" alt="paypal logo">
+                    </div>
+                    <div class="weave big-bubble">
+                        <img src="/saas-project-assets/logo_icons/weave.png" alt="weave logo">
+                    </div>
+                    <div class="google2 small-bubble">
+                        <img src="/saas-project-assets/logo_icons/google-A.png" alt="google logo">
+                    </div>
+                    <div class="calandar big-bubble">
+                        <img src="/saas-project-assets/logo_icons/calendar.png" alt="google calander logo">
                     </div>
                 </div>
             </div>
+            <div class="header-clip"></div>
+            <script>
+                const navbar = document.getElementById("navbar")
+                function colorNavBG() {
+                    if (window.scrollY ===0) {
+                        document.getElementById("navbar").style.backgroundColor = "transparent";
+                    }
+                    else {
+                        document.getElementById("navbar").style.backgroundColor = "white";
+                    }
+                }
+                window.addEventListener("scroll", colorNavBG);
+            </script>
         </header>
+        <div class="key-benefits">
+            <h2>Key Benefits</h2>
+            <p>Design faster with a growing array of beautiful templates</p>
+            </div>
+        </div>
+        <div class="key-benefits-cards flex-container">
+            <div class="card">
+                <img src="/saas-project-assets/icons/responsive.svg" alt="mobile responsive icon">
+                <h4>Responsive</h4>
+                <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
+                <h5><a href="#">Learn more</a></h5>
+            </div>
+            <div class="card">
+                <img src="/saas-project-assets/icons/customizable.svg" alt="mobile responsive icon">
+                <h4>Customizable</h4>
+                <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
+                <h5><a href="#">Learn more</a></h5>
+            </div>
+            
+            <div class="card">
+                <img src="/saas-project-assets/icons/premium.svg" alt="mobile responsive icon">
+                <div class="premium-header">
+                    <h4>Premium</h4><p>sketch</p>
+                </div>
+                <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
+                <h5><a href="#">Learn more</a></h5>
+            </div>
+            <div class="card">
+                <img src="/saas-project-assets/icons/documentation.svg" alt="mobile responsive icon">
+                <h4>Documentation</h4>
+                <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
+                <h5><a href="#">Learn more</a></h5>
+            </div>
+        </div>
     </body>
 </html>

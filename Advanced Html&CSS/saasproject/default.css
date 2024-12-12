@@ -1,11 +1,36 @@
 :root {
     --white: #FFF;
     --black: #000;
-    --gradient-grey: #b0aebe;
-    --water: rgb(55, 126, 241);
+    --warm-grey: #d8d8d8;
+    --gradient-grey: #616161;
+    --water: #2476fe;
+    --money: #0fd398;
     font-family: sans-serif;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.flex-container, .grid-container, nav{
+    padding: 0 2rem;
+}
+.flex-container {
+    display: flex;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "a1 a2 a3 a4 a5 a6 a7"
+    "b1 b2 b3 b4 b5 b6 b7"
+    "c1 c2 c3 c4 c5 c6 c7"
+    "d1 d2 d3 d4 d5 d6 d7"
+    "e1 e2 e3 e4 e5 e6 e7"
+    ;
+}
 button {
+    text-align: center;
     border: none;
     width: 7rem;
     height: 3rem;
@@ -14,5 +39,5 @@ button {
     border-radius:2pc;
     color: var(--white);
     font-weight: 900;
-    background-color: rgb(33, 97, 160);
+    background-color: var(--water);
 }
