@@ -40,7 +40,8 @@ header {
     display: block;
     width: 100%;
     position: relative;
-    
+    margin: 0;
+    padding: 0;
     height: auto;
     background-image: url(./saas-project-assets/backgrounds/background-top.svg);
     background-size: cover;
@@ -149,8 +150,7 @@ h2 {
 .calandar {grid-area: e7;}
 
 /* key benefits area */
-.key-benefits {
-    margin-top: 10rem;
+.key-benefits-text {
     text-align: center;
 }
 .key-benefits-cards {
@@ -160,15 +160,12 @@ h2 {
 }
 .key-benefits-cards img {
     max-width: 4rem;
+    height: 4rem;
     margin: 1rem 1rem 0;
 }
 .key-benefits-cards .premium-header {
     display: flex;
     justify-content: left;
-}
-.key-benefits-cards .premium-header h4 {
-    margin: 0;
-    padding: 0;
 }
 .key-benefits-cards .premium-header p {
     align-self: center;
@@ -178,10 +175,13 @@ h2 {
     border: 1px solid var(--money);
 }
 .key-benefits-cards .card {
-    width: 23%;
+    flex-wrap: wrap;
+    min-width: 3rem;
+    max-width: 23%;
     box-shadow: -0.1rem 0.5rem 10px .3rem var(--warm-grey);
 }
 .key-benefits-cards h4, .key-benefits-cards p, .key-benefits-cards h5 {
+    margin: 1rem 0;
     padding: 0 1rem;
 }
 .key-benefits-cards p {
@@ -190,4 +190,177 @@ h2 {
 .key-benefits-cards a {
     text-decoration: none;
     color: var(--water);
+}
+/* software people */
+.software-people {
+    padding: 0;
+    padding-top: 10rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    background-color: rgb(248, 248, 250);
+    box-sizing: border-box;
+}
+.software-people-text {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+.software-people-text h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    width: 30rem;
+}
+.software-people-text .play-video-button {
+    align-self: flex-start;
+}
+.banner-img{
+    /* width: 30rem; */
+    max-width: 100%;
+    height: auto;
+}
+.img-container {
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+/* Why front text */
+.why-front {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}.why-front p {
+    margin-top: 0;
+    color: var(--gradient-grey);
+    max-width: 35rem;
+    align-self: center;
+}
+/* why font timeline */
+.why-front .flex-container {
+    justify-content: space-evenly;
+    align-content: center;
+}
+.why-front .timeline-element {
+    display: flex;
+    flex-direction: column;
+}
+.dot-bg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50pc;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--white);
+    z-index: 10;
+}
+.blue-dot {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50pc;
+    border-radius: 50pc;
+    height: 3rem;
+    width: 3rem;
+    background-color: #76b3f83b;
+    z-index: 50;
+}
+.water-dot {
+    justify-self: center;
+    align-self: center;
+    border-radius: 50pc;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: var(--water);
+    z-index: 100;
+}
+.why-front hr {
+    border: none; /* Remove default border */
+    height: 2px; /* Set thickness */
+    background-color: var(--warm-grey);
+    margin: 0 10rem;
+    position: relative;
+    top: 1.5rem;
+    z-index: 1;
+}
+/* video player  */
+.video-player {
+    margin: 0 2rem;
+    margin-top: 7rem;
+}
+.video-player img {
+    max-width: 100%;
+    height: auto;
+    z-index: 100;
+}
+.dynamic-play-button {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    z-index: 1000;
+    background-color: var(--white);
+    position: relative;
+    top: -14.2rem;
+    right: -28.6rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 5px 1px var(--gradient-grey);
+
+}
+.static-play {
+    display: block;
+}
+.anim-play {
+    display: none;
+}
+.dynamic-play-button:hover .static-play {
+    display: none;
+}
+
+.dynamic-play-button:hover .anim-play {
+    display: block;
+}
+.dynamic-play-button:hover {
+    box-shadow: 0 0 0 0 transparent;
+}
+/* executive director section */
+.director-container {
+    display: flex;
+    flex-direction: row;
+}
+.exec-director {
+    background-image: url(/saas-project-assets/abstract/dots.svg);
+    background-size: 12rem;
+    background-repeat: no-repeat;
+    margin: 0 2rem;
+    margin-top: 10rem;
+}
+.director-img {
+    z-index: 100;
+    margin: 0 4rem;
+    max-width: 24rem;
+    position: relative;
+    top: -8rem;
+    left: -1rem;
+}
+.dots-bg {
+    z-index: 10;
+    max-width: 15rem;
+    position: absolute;
+    top: 161rem;
+    left: 2rem;
+}
+/* director section text styling */
+.director-text {
+    padding-top: 8rem;
+
+}
+.director-text img {
+    width: 5rem;
 }

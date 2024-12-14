@@ -64,7 +64,7 @@
             <script>
                 const navbar = document.getElementById("navbar")
                 function colorNavBG() {
-                    if (window.scrollY ===0) {
+                    if (window.scrollY === 0) {
                         document.getElementById("navbar").style.backgroundColor = "transparent";
                     }
                     else {
@@ -74,39 +74,157 @@
                 window.addEventListener("scroll", colorNavBG);
             </script>
         </header>
-        <div class="key-benefits">
-            <h2>Key Benefits</h2>
-            <p>Design faster with a growing array of beautiful templates</p>
-            </div>
-        </div>
-        <div class="key-benefits-cards flex-container">
-            <div class="card">
-                <img src="/saas-project-assets/icons/responsive.svg" alt="mobile responsive icon">
-                <h4>Responsive</h4>
-                <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
-                <h5><a href="#">Learn more</a></h5>
-            </div>
-            <div class="card">
-                <img src="/saas-project-assets/icons/customizable.svg" alt="mobile responsive icon">
-                <h4>Customizable</h4>
-                <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
-                <h5><a href="#">Learn more</a></h5>
-            </div>
-            
-            <div class="card">
-                <img src="/saas-project-assets/icons/premium.svg" alt="mobile responsive icon">
-                <div class="premium-header">
-                    <h4>Premium</h4><p>sketch</p>
+        <!-- key benefits section -->
+         <section class="key-benefits">
+            <div class="key-benefits-text">
+                <h2>Key Benefits</h2>
+                <p>Design faster with a growing array of beautiful templates</p>
                 </div>
-                <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
-                <h5><a href="#">Learn more</a></h5>
             </div>
-            <div class="card">
-                <img src="/saas-project-assets/icons/documentation.svg" alt="mobile responsive icon">
-                <h4>Documentation</h4>
-                <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
-                <h5><a href="#">Learn more</a></h5>
+            <div class="key-benefits-cards flex-container">
+                <div class="card">
+                    <img src="/saas-project-assets/icons/responsive.svg" alt="mobile responsive icon">
+                    <h4>Responsive</h4>
+                    <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
+                    <h5><a href="#">Learn more</a></h5>
+                </div>
+                <div class="card">
+                    <img src="/saas-project-assets/icons/customizable.svg" alt="mobile responsive icon">
+                    <h4>Customizable</h4>
+                    <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
+                    <h5><a href="#">Learn more</a></h5>
+                </div>
+                <div class="card">
+                    <img src="/saas-project-assets/icons/premium.svg" alt="mobile responsive icon">
+                    <div class="premium-header">
+                        <h4>Premium</h4><p>sketch</p>
+                    </div>
+                    <p>
+                        It is a long established fact that
+                        a reader will be distracted by readable 
+                        content of a page when looking at its layout.</p>
+                    <h5>
+                        <a href="#">Learn more</a>
+                    </h5>
+                </div>
+                <div class="card">
+                    <img 
+                        src="/saas-project-assets/icons/documentation.svg" 
+                        alt="mobile responsive icon">
+                    <h4>Documentation</h4>
+                    <p>
+                        It is a long established fact that 
+                        a reader will be distracted by
+                        readable content of a page when 
+                        looking at its layout.</p>
+                    <h5><a href="#">Learn more</a></h5>
+                </div>
             </div>
+         </section>
+        <!-- software people section -->
+        <section class="software-people flex-container">
+            <div class="software-people-text flex-container">
+                <h3>
+                    Front makes you look at things
+                    from a different prospective
+                </h3>
+                <button class="play-video-button">
+                    <img 
+                    class="play-img" 
+                    src="https://img.icons8.com/?size=100&id=60450&format=png&color=FFFFFF" 
+                    alt="white play button">
+                    Play Video
+                </button>
+            </div>
+            <div class="img-container flex-container">
+                <img 
+                    class="banner-img" 
+                    src="./saas-project-assets/banners/banner_one.jpg" 
+                    alt="banner one">
+            </div>
+        </section>
+        </section>
+        <!-- why front section -->
+        <section class="why-front">
+            <h2>Why front?</h2>
+            <p>
+                Front is an incerdibly beautiful,
+                full responsive, and mobile-first 
+                projects on the the web - it is the 
+                first point for creative sites
+            </p>
+            <hr>
+            <div class="flex-container">
+                <div class="timeline-element">
+                    <div class="dot-bg">
+                        <div class="blue-dot">
+                            <div class="water-dot"></div>
+                        </div>
+                    </div>
+                    <h4>Basic elements</h4>
+                </div>
+                <div class="timeline-element">
+                    <div class="dot-bg">
+                        <div class="blue-dot">
+                            <div class="water-dot"></div>
+                        </div>
+                    </div>
+                    <h4>Components</h4>
+                </div>
+                <div class="timeline-element">
+                    <div class="dot-bg">
+                        <div class="blue-dot">
+                            <div class="water-dot"></div>
+                        </div>
+                    </div>
+                    <h4>Combined components</h4>
+                </div>
+                <div class="timeline-element">
+                    <div class="dot-bg">
+                        <div class="blue-dot">
+                            <div class="water-dot"></div>
+                        </div>
+                    </div>
+                    <h4>Page layouts</h4>
+                </div>
+            </div>
+        </section>
+        <section class="video-player">
+            <img 
+                src="/saas-project-assets/banners/banner_two.jpg" 
+                alt="banner image of website dashboards">
+            <div class="dynamic-play-button">
+                <img 
+                    class="static-play" 
+                    src="https://img.icons8.com/?size=100&id=HUndmeQRiULI&format=png&color=000000" 
+                    alt="static play button">
+                <img 
+                    class="anim-play" 
+                    src="./saas-project-assets/icons8-play-button-circled.gif" 
+                    alt="animated play button">
+            </div>
+        </section>
+        <section class="director-container">
+            <div class="exec-director">
+                <div class="img-container">
+                    <img 
+                        class="director-img" 
+                        src="/saas-project-assets/people/woman_three.jpg" 
+                        alt="Image of executive director of front.">
+                </div>
+            </div>
+            <div class="director-text">
+                <img 
+                    src="/saas-project-assets/company_logos/hubspot.svg" 
+                    alt="hubspot logo">
+            <p>
+                The template is really nice and offers
+                a large set of options. It's beautiful and 
+                the coding is done quickly and seamlessly.
+                Thank you!
+            </p>
         </div>
+        </section>
+        
     </body>
 </html>
