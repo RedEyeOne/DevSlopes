@@ -10,27 +10,30 @@
 	<title> Front End Design </title>
     </head>
     <body>
-        <header>
-            <nav id="navbar">
-                <div class="project-logo">
-                    <img src="./saas-project-assets/project_logo/logo.svg" alt="">
-                </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Hire Us</a></li>
-                    <li><button class="buy-now">Buy Now</button></li>
-                </ul>
-            </nav>
+        <nav id="navbar">
+            <div class="project-logo">
+                <img src="./saas-project-assets/project_logo/logo.svg" alt="">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Hire Us</a></li>
+                <li><button class="buy-now">Buy Now</button></li>
+            </ul>
+        </nav>
+        <header>  
             <div class="header-display-container">
                 <div class="flex-container">
                     <h1>Empowering teams with the freedom</h1>
                     <p>Own the unlimited power of the web development</p>
                     <div class="header-buttons">
                         <button class="play-video-button">
-                            <img class="play-img" src="https://img.icons8.com/?size=100&id=60450&format=png&color=FFFFFF" alt="white play button">
+                            <img 
+                                class="play-img" 
+                                src="https://img.icons8.com/?size=100&id=60450&format=png&color=FFFFFF" 
+                                alt="white play button">
                             Play Video
                         </button>
                         <a href="#" class="learn-more">Learn More</a>
@@ -38,71 +41,92 @@
                 </div>
                 <div class="header-logos grid-container">
                     <div class="google1 small-bubble">
-                    <img src="./saas-project-assets/logo_icons/google.png" alt="google logo">
+                    <img 
+                        src="./saas-project-assets/logo_icons/google.png" 
+                        alt="google logo">
                     </div>
                     <div class="atlassian big-bubble">
-                        <img src="/saas-project-assets/logo_icons/atlassian.png" alt="atlassian logo">
+                        <img 
+                            src="/saas-project-assets/logo_icons/atlassian.png" 
+                            alt="atlassian logo">
                     </div>
                     <div class="asana big-bubble">
-                        <img src="/saas-project-assets/logo_icons/asana.png" alt="asana logo">
+                        <img 
+                            src="/saas-project-assets/logo_icons/asana.png" 
+                            alt="asana logo">
                     </div>
                     <div class="paypal big-bubble">
-                        <img src="/saas-project-assets/logo_icons/paypal.jpg" alt="paypal logo">
+                        <img 
+                            src="/saas-project-assets/logo_icons/paypal.jpg" 
+                            alt="paypal logo">
                     </div>
                     <div class="weave big-bubble">
-                        <img src="/saas-project-assets/logo_icons/weave.png" alt="weave logo">
+                        <img 
+                            src="/saas-project-assets/logo_icons/weave.png" 
+                            alt="weave logo">
                     </div>
                     <div class="google2 small-bubble">
-                        <img src="/saas-project-assets/logo_icons/google-A.png" alt="google logo">
+                        <img 
+                            src="/saas-project-assets/logo_icons/google-A.png" 
+                            alt="google logo">
                     </div>
                     <div class="calandar big-bubble">
-                        <img src="/saas-project-assets/logo_icons/calendar.png" alt="google calander logo">
+                        <img 
+                            src="/saas-project-assets/logo_icons/calendar.png" 
+                            alt="google calander logo">
                     </div>
                 </div>
             </div>
             <div class="header-clip"></div>
-            <script>
-                const navbar = document.getElementById("navbar")
-                function colorNavBG() {
-                    if (window.scrollY === 0) {
-                        document.getElementById("navbar").style.backgroundColor = "transparent";
-                    }
-                    else {
-                        document.getElementById("navbar").style.backgroundColor = "white";
-                    }
-                }
-                window.addEventListener("scroll", colorNavBG);
-            </script>
+            
         </header>
         <!-- key benefits section -->
          <section class="key-benefits">
             <div class="key-benefits-text">
                 <h2>Key Benefits</h2>
-                <p>Design faster with a growing array of beautiful templates</p>
+                <p>
+                    Design faster with a growing 
+                    array of beautiful templates
+                </p>
                 </div>
             </div>
             <div class="key-benefits-cards flex-container">
                 <div class="card">
-                    <img src="/saas-project-assets/icons/responsive.svg" alt="mobile responsive icon">
+                    <img 
+                        src="/saas-project-assets/icons/responsive.svg" 
+                        alt="mobile responsive icon">
                     <h4>Responsive</h4>
-                    <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
+                    <p>It is a long established fact that 
+                        a reader will be distracted by 
+                        readable content of a page when 
+                        looking at its layout.
+                    </p>
                     <h5><a href="#">Learn more</a></h5>
                 </div>
                 <div class="card">
-                    <img src="/saas-project-assets/icons/customizable.svg" alt="mobile responsive icon">
+                    <img 
+                        src="/saas-project-assets/icons/customizable.svg" 
+                        alt="mobile responsive icon">
                     <h4>Customizable</h4>
-                    <p>It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.</p>
+                    <p>
+                        It is a long established fact that a reader
+                         will be distracted by readable content of 
+                         a page when looking at its layout.
+                    </p>
                     <h5><a href="#">Learn more</a></h5>
                 </div>
                 <div class="card">
-                    <img src="/saas-project-assets/icons/premium.svg" alt="mobile responsive icon">
+                    <img 
+                        src="/saas-project-assets/icons/premium.svg" 
+                        alt="mobile responsive icon">
                     <div class="premium-header">
                         <h4>Premium</h4><p>sketch</p>
                     </div>
-                    <p>
+                    <p class="premium-text">
                         It is a long established fact that
                         a reader will be distracted by readable 
-                        content of a page when looking at its layout.</p>
+                        content of a page when looking at its layout.
+                    </p>
                     <h5>
                         <a href="#">Learn more</a>
                     </h5>
@@ -116,7 +140,8 @@
                         It is a long established fact that 
                         a reader will be distracted by
                         readable content of a page when 
-                        looking at its layout.</p>
+                        looking at its layout.
+                    </p>
                     <h5><a href="#">Learn more</a></h5>
                 </div>
             </div>
@@ -189,6 +214,7 @@
                 </div>
             </div>
         </section>
+        <!-- video player banner -->
         <section class="video-player">
             <img 
                 src="/saas-project-assets/banners/banner_two.jpg" 
@@ -204,6 +230,7 @@
                     alt="animated play button">
             </div>
         </section>
+        <!-- Executive director section -->
         <section class="director-container">
             <div class="exec-director">
                 <div class="img-container">
@@ -223,8 +250,155 @@
                 the coding is done quickly and seamlessly.
                 Thank you!
             </p>
+            <h4 class="exec-name">Christina Kray</h4>
+            <p class="job-title">Executive Director</p>
         </div>
         </section>
-        
+        <!-- trusted by different companies section -->
+        <section class="trusted-by flex-container">
+            <h4>TRUSTED BY WORLD'S BEST</h4>
+            <div class="black-logo-container flex-container">
+                <img 
+                    class="black-company-logo" 
+                    src="./saas-project-assets/company_logos/weebly.svg" 
+                    alt="weebly logo">
+                <img 
+                    class="black-company-logo" 
+                    src="./saas-project-assets/company_logos/uber.svg" 
+                    alt="uber logo">
+                <img 
+                    class="black-company-logo" 
+                    src="./saas-project-assets/company_logos/slack.svg" 
+                    alt="slack logo">
+                <img 
+                    class="black-company-logo" 
+                    src="./saas-project-assets/company_logos/airbnb.svg" 
+                    alt="air bnb logo">
+                <img 
+                    class="black-company-logo" 
+                    src="./saas-project-assets/company_logos/slack.svg" 
+                    alt="slack logo">
+
+            </div>
+        </section>
+        <!-- Pricing section -->
+        <section class="pricing">
+            <div class="pricing-text-box flex-container">
+                <h2>Pricing</h2>
+                <p>No additional costs. Pay for what you use</p>
+            </div>
+            <div class="pricing-cards-container flex-container">
+                <div class="popout-card">
+                    <span class="price-number">59</span> <span class="price-month">/ mo</span>
+                    <hr>
+                    <p>
+                        Start your Front business now.
+                        100% guaranteed money back. 
+                        No questions asked.
+                    </p>
+                    <button class="play-video-button">
+                        <img 
+                            class="play-img" 
+                            src="https://img.icons8.com/?size=100&id=60450&format=png&color=FFFFFF" 
+                            alt="white play button">
+                        Play Video
+                    </button>
+                    <p class="small-text">
+                        No credit card required.
+                    </p>
+                </div>
+                <div class="borderles-card-container">
+                    <div class="borderles-card">
+                        <img 
+                            src="./saas-project-assets/icons/components.svg" 
+                            alt="Puzzle design">
+                        <h4>Hundreds of componets</h4>
+                        <p>
+                            Achieve maximum productivity 
+                            with minumum effort with 
+                            Front and create robust 
+                            Limitless products.
+                        </p>
+                    </div>
+                    <div class="borderles-card">
+                        <img 
+                            src="./saas-project-assets/icons/images.svg" 
+                            alt="Puzzle design">
+                        <h4>Images included</h4>
+                        <p>
+                            Achieve maximum productivity 
+                            with minumum effort with 
+                            Front and create robust 
+                            Limitless products.
+                        </p>
+                    </div>
+                    <div class="borderles-card">
+                        <img 
+                            src="./saas-project-assets/icons/cancel.svg" 
+                            alt="Puzzle design">
+                        <div class="cancel-header flex-container">
+                            <h4>Cancel anytime<h4><p>sketch</p>
+                        </div>
+                        <p>
+                            Achieve maximum productivity 
+                            with minumum effort with 
+                            Front and create robust 
+                            Limitless products.
+                        </p>
+                    </div>
+                    <div class="borderles-card">
+                        <img 
+                            src="./saas-project-assets/icons/moneyback.svg" 
+                            alt="Puzzle design">
+                        <h4>Money back</h4>
+                        <p>
+                            Achieve maximum productivity 
+                            with minumum effort with 
+                            Front and create robust 
+                            Limitless products.
+                        </p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- blue bg'd form section -->
+        <section class="blue-bg-form flex-contiainer">
+            <div class="hire-us-text flex-container">
+                <h2 class="white-text">Hire Us</h2>
+                <p class="hire-us-underlined grey-text">
+                    Whatever your goal -
+                    we will get you there
+                </p>
+                <p class="quote white-text">
+                    " I love front! I love the ease
+                    of use, I love the fact that 
+                    I have total creative freedom..."
+                </p>
+                <h3 class="white-text">Charlotte Moore</h3>
+                <p class="job-title grey-text">Head of Commercials, Slack</p>
+            </div>
+            <form action="">
+
+            </form>
+        </section>
+
+        <script>
+            // set navbar background to white when user scrolls
+            const navbar = document.getElementById("navbar")
+            function colorNavBG() {
+                if (window.scrollY === 0) {
+                    document.getElementById("navbar").style.backgroundColor = "transparent";
+                    document.getElementById("navbar").style.height = "0";
+                    document.getElementById("navbar").style.top = "2.5rem";
+                }
+                else {
+                    document.getElementById("navbar").style.backgroundColor = "white";
+                    document.getElementById("navbar").style.height = "4rem";
+                    document.getElementById("navbar").style.top = "0";
+                }
+            }
+            window.addEventListener("scroll", colorNavBG);
+        </script>
     </body>
 </html>

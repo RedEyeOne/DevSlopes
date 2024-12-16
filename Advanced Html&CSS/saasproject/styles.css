@@ -1,10 +1,12 @@
 /* nav styles */
 nav {
+    height: 0;
     display: flex;
     justify-content: space-between;
     align-content: center;
     position: sticky;
-    top: 0;
+    top: 2.5rem;
+    width: 95%;
     z-index: 1000;
     background-color: transparent;
     font-size: .9rem;
@@ -56,7 +58,7 @@ h1 {
     margin: 5rem 0 0 0;
 }
 .header-display-container {
-    margin-top: 4rem;
+    padding-top: 10rem;
     display: flex;
     justify-content: space-between;
 }
@@ -167,6 +169,10 @@ h2 {
     display: flex;
     justify-content: left;
 }
+.premium-header h4 {
+    margin-bottom: 0rem;
+    padding-bottom: 0;
+}
 .key-benefits-cards .premium-header p {
     align-self: center;
     color: var(--white);
@@ -186,6 +192,9 @@ h2 {
 }
 .key-benefits-cards p {
     color: var(--gradient-grey);
+}
+.premium-text {
+    margin-top: 0;
 }
 .key-benefits-cards a {
     text-decoration: none;
@@ -339,6 +348,7 @@ h2 {
     background-size: 12rem;
     background-repeat: no-repeat;
     margin: 0 2rem;
+    margin-right: 0;
     margin-top: 10rem;
 }
 .director-img {
@@ -359,8 +369,154 @@ h2 {
 /* director section text styling */
 .director-text {
     padding-top: 8rem;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+    font-stretch: expanded;
+    font-weight: 500;
 
 }
 .director-text img {
     width: 5rem;
+}
+.director-text p {
+    margin-top: 3rem;
+}
+.exec-name {
+    margin-top: 4rem;
+    margin-bottom: 0.4rem;
+}
+.director-text .job-title {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--gradient-grey);
+}
+/* trusted by different companies section */
+.trusted-by {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.trusted-by h4 {
+    color: var(--gradient-grey);
+}
+.black-logo-container {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.black-company-logo {
+    width: 7rem;
+    height: auto;
+}
+/* Pricing text section */
+.pricing-text-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-text-box h2 {
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+.pricing-text-box p {
+    margin-top: 0;
+    color: var(--gradient-grey);
+}
+/* pricing cards */
+.pricing-cards-container {
+    margin-bottom: 6rem;
+}
+.popout-card {
+    min-width: 30%;
+    box-shadow: 0 5px 5px var(--warm-grey);
+    padding: 50px;
+}
+.price-number {
+    font-size: 5rem;
+}
+.price-month {
+    font-size: 1.7rem;
+    color: var(--gradient-grey);
+}
+.popout-card hr {
+    color: var(--warm-grey);
+}
+.popout-card p {
+    color: var(--gradient-grey);
+    font-size: 1.1rem;
+    font-weight: 600;
+    max-width: 16rem;
+}
+.popout-card button {
+    margin-top: 3rem;
+}
+.popout-card .small-text {
+    font-size: 0.9rem;
+}
+.borderles-card-container {
+    margin: 1rem 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.borderles-card {
+    width: 100%;
+}
+.borderles-card img {
+    width: 4rem;
+}
+.borderles-card p {
+    color: var(--gradient-grey);
+    font-size: .85rem;
+}
+.cancel-header {
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    padding: 0;
+}
+.cancel-header h4 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.cancel-header p {
+    margin: 0;
+    padding: 0;
+    width: 4rem;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    color: var(--white);
+    background-color: var(--money);
+    border-radius: 50px;
+    border: 1px solid var(--money);
+}
+/* hire us text section */
+.hire-us-text {
+    margin-left: 3rem;
+    flex-direction: column;
+}
+.hire-us-underlined {
+    max-width: 10rem;
+    -top: 0;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--white);
+}
+.hire-us-text .quote {
+    max-width: 20rem;
+    font-style: italic;
+    font-weight: 600;
+}
+.hire-us-text h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.hire-us-text .job-title {
+    margin-top: .3rem;
 }

@@ -2,11 +2,14 @@
     --white: #FFF;
     --black: #000;
     --warm-grey: #d8d8d8;
-    --gradient-grey: #616161;
+    --gradient-grey: #7d8a94;
     --water: #2476fe;
     --money: #0fd398;
     font-family: sans-serif;
 }
+.grey-text {color: var(--gradient-grey);}
+.white-text {color: var(--white);}
+.blue-bg-form {background-color: #344f7e;}
 body, html {
     margin: 0;
     padding: 0;
