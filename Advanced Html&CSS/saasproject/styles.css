@@ -542,13 +542,16 @@ h2 {
         "first last"
         "first2 last2"
         "budget country"
-        "text-box text-box";
+        "text-box text-box"
+        "privacy-policy-check privacy-policy-check"
+        "links links"
+        "button button";
     grid-template-columns: repeat(2, 1fr); /* Define 4 equal columns */
     grid-template-rows: auto;
     gap: 1rem; 
 }
 
-.form-grid > * { 
+.form-grid > input, .form-grid > select { 
     width: 90%;
     height: 2rem;
     border-radius: 5px;
@@ -563,3 +566,29 @@ h2 {
 .budget-options {grid-area: budget}
 .country {grid-area: country;}
 .text-box {grid-area: text-box; height: 6rem;}
+.form-grid .play-video-button {grid-area: button;}
+.privacy-policy-links .link1 {
+    color: rgb(117, 118, 121);
+    text-decoration: dotted underline;
+    text-decoration-thickness: 0.1rem;
+}
+.privacy-policy-links .link2 {
+    color: var(--water);
+    
+    text-decoration: dotted underline;
+    text-decoration-thickness: 0.1rem;
+}
+.privacy-policy-links {
+    grid-area: links;
+    display: flex;
+    justify-content: space-evenly;
+}
+.privacy-policy-check {
+    grid-area: privacy-policy-check; 
+    display: flex;
+    gap: 1rem;
+}
+.form-grid .play-video-button a {
+    color: var(--white);
+    text-decoration: none;
+}
