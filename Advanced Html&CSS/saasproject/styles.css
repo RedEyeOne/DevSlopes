@@ -38,7 +38,9 @@ nav ul{
     margin-right: 2rem;
     background-color: var(--water);
 }
-
+.learn-more:hover {
+    color: var(--gradient-grey);
+}
 /* header text  */
 header {
     display: block;
@@ -182,6 +184,7 @@ h2 {
     background-color: var(--money);
     border-radius: 50px;
     border: 1px solid var(--money);
+    margin: 0;
 }
 .key-benefits-cards .card {
     flex-wrap: wrap;
@@ -196,12 +199,14 @@ h2 {
 .key-benefits-cards p {
     color: var(--gradient-grey);
 }
-.premium-text {
+.key-benefits-cards .premium-text {
     margin-top: 0;
 }
+
 .key-benefits-cards a {
     text-decoration: none;
     color: var(--water);
+    margin: 0;
 }
 /* software people */
 .software-people {
@@ -552,7 +557,7 @@ h2 {
     background-color: var(--white);
     border-radius: 5px;
     position: relative;
-    right: -1.5rem; /* adjust form horizontal position */
+    right: -3%; /* adjust form horizontal position */
     width: 50%
 }
 .blue-bg-form form h4 {
@@ -635,4 +640,47 @@ h2 {
 .form-grid .play-video-button a {
     color: var(--white);
     text-decoration: none;
+}
+/* Footer links section */
+.footer-links {
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+.footer-links .company span {
+    font-size: .7rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    padding: 0.15rem 0.3rem;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--water);
+}
+.footer-links .logo img {
+    width: 6rem;
+}
+.footer-links ul {
+    text-align: left;
+    padding: 0;
+    line-height: 1.9rem;
+}
+.footer-links ul li {
+    list-style: none;
+}
+.footer-links ul li a {
+    font-size: .9rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--gradient-grey);
+}
+.footer-links ul li a:hover{
+    color: var(--water);
+}
+/* bottom of footer privacy & policy section */
+.privacy-footer {
+    color: var(--gradient-grey);
+    text-align: center;
+
+}
+.policy-statement {
+    flex-direction: column;
 }

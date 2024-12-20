@@ -12,15 +12,29 @@
     <body>
         <nav id="navbar">
             <div class="project-logo">
-                <img src="./saas-project-assets/project_logo/logo.svg" alt="">
+                <img 
+                    src="./saas-project-assets/project_logo/logo.svg" 
+                    alt="Front logo">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Learn</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Hire Us</a></li>
-                <li><button class="buy-now">Buy Now</button></li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="#learn">Learn</a>
+                </li>
+                <li>
+                    <a href="#pricing">Pricing</a>
+                </li>
+                <li>
+                    <a href="#hireus">Hire Us</a>
+                </li>
+                <li>
+                    <button class="buy-now">Buy Now</button>
+                </li>
             </ul>
         </nav>
         <header>  
@@ -81,7 +95,7 @@
             
         </header>
         <!-- key benefits section -->
-         <section class="key-benefits">
+         <section id="features" class="key-benefits">
             <div class="key-benefits-text">
                 <h2>Key Benefits</h2>
                 <p>
@@ -101,7 +115,12 @@
                         readable content of a page when 
                         looking at its layout.
                     </p>
-                    <h5><a href="#">Learn more</a></h5>
+                    <h5>
+                        <a 
+                            href="#learn" 
+                            class="learn-more">Learn more
+                        </a>
+                    </h5>
                 </div>
                 <div class="card">
                     <img 
@@ -113,7 +132,12 @@
                          will be distracted by readable content of 
                          a page when looking at its layout.
                     </p>
-                    <h5><a href="#">Learn more</a></h5>
+                    <h5>
+                        <a 
+                            href="#learn" 
+                            class="learn-more">Learn more
+                        </a>
+                    </h5>
                 </div>
                 <div class="card">
                     <img 
@@ -128,7 +152,10 @@
                         content of a page when looking at its layout.
                     </p>
                     <h5>
-                        <a href="#">Learn more</a>
+                        <a 
+                            href="#learn" 
+                            class="learn-more">Learn more
+                        </a>
                     </h5>
                 </div>
                 <div class="card">
@@ -142,7 +169,12 @@
                         readable content of a page when 
                         looking at its layout.
                     </p>
-                    <h5><a href="#">Learn more</a></h5>
+                    <h5>
+                        <a 
+                            href="#learn" 
+                            class="learn-more">Learn more
+                        </a>
+                    </h5> 
                 </div>
             </div>
          </section>
@@ -170,7 +202,7 @@
         </section>
         </section>
         <!-- why front section -->
-        <section class="why-front">
+        <section id="learn" class="why-front">
             <h2>Why front?</h2>
             <p>
                 Front is an incerdibly beautiful,
@@ -282,7 +314,7 @@
             </div>
         </section>
         <!-- Pricing section -->
-        <section class="pricing">
+        <section id="pricing" class="pricing">
             <div class="pricing-text-box flex-container">
                 <h2>Pricing</h2>
                 <p>No additional costs. Pay for what you use</p>
@@ -363,7 +395,7 @@
          </section>
 
          <!-- blue bg'd form section -->
-        <section class="blue-bg-form">
+        <section id="hireus" class="blue-bg-form">
             <div class="hire-us-text flex-container">
                 <h2 class="white-text">Hire Us</h2>
                 <p class="hire-us-underlined grey-text">
@@ -378,33 +410,84 @@
                 <h3 class="white-text">Charlotte Moore</h3>
                 <p class="job-title grey-text">Head of Commercials, Slack</p>
                 <div class="employee-imgs flex-container">
-                    <img src="./saas-project-assets/people/woman_two.jpg" alt="employee image">
-                    <img src="./saas-project-assets/people/woman_one.jpg" alt="employee image">
-                    <img src="./saas-project-assets/people/man_one.jpg" alt="employee image">
+                    <img 
+                        src="./saas-project-assets/people/woman_two.jpg"
+                        alt="employee image">
+                    <img 
+                        src="./saas-project-assets/people/woman_one.jpg" 
+                        alt="employee image">
+                    <img 
+                        src="./saas-project-assets/people/man_one.jpg" 
+                        alt="employee image">
                 </div>
             </div>
             <form action="">
                 <h4 >Fill out the form and we'll be in touch as soon as possible</h4>
                 <div class="form-grid">
-                    <input type="text" placeholder="First name" class="first-name">
-                    <input type="text" placeholder="Last name" class="last-name">
-                    <input type="text" placeholder="First name" class="first-name2">
-                    <input type="text" placeholder="Last name" class="last-name-2">
+                    <input 
+                        type="text" 
+                        placeholder="First name"
+                        class="first-name">
+                    <input 
+                        type="text" 
+                        placeholder="Last name" 
+                        class="last-name">
+                    <input 
+                        type="text" 
+                        placeholder="First name"
+                        class="first-name2">
+                    <input 
+                        type="text" 
+                        placeholder="Last name" 
+                        class="last-name-2">
                     <select class="budget-options" nameplace="budget-options" id="budget-options">
-                        <option value="budget" selected>Budget</option>
-                        <option value="exxpensive">Expensive</option>
-                        <option value="basic">Basic</option>
-                        <option value="economy">Economy</option>
+                        <option 
+                            value="budget" 
+                            selected>
+                            Budget
+                        </option>
+                        <option 
+                            value="exxpensive">
+                            Expensive
+                        </option>
+                        <option 
+                            value="basic">
+                            Basic
+                        </option>
+                        <option 
+                            value="economy">
+                            Economy
+                        </option>
                     </select>
                     <select class="country" nameplace="country" id="country">
-                        <option value="country" selected>Country</option>
-                        <option value="rome">Rome</option>
-                        <option value="egypt">Egypt</option>
-                        <option value="austria">Austria</option>
+                        <option 
+                            value="country" 
+                            selected>
+                            Country
+                        </option>
+                        <option 
+                            value="rome">
+                            Rome
+                        </option>
+                        <option 
+                            value="egypt">
+                            Egypt
+                        </option>
+                        <option 
+                            value="austria">
+                            Austria
+                        </option>
                     </select>
-                    <textarea name="" id="" class="text-box" placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
+                    <textarea 
+                        name="user-text" 
+                        class="text-box" 
+                        placeholder="Tell us more about your project, needs, and timeline, please...">
+                    </textarea>
                     <div class="privacy-policy-check">
-                        <input type="checkbox" name="policy" id="policy">
+                        <input 
+                            type="checkbox" 
+                            name="policy" 
+                            id="policy">
                         <p class="grey-text">
                             Yes, I'd like to receive occasional marketing 
                             emails from Front. I have the right to opt 
@@ -412,8 +495,16 @@
                         </p>
                     </div>
                     <div class="privacy-policy-links">
-                        <a class="link1" href="#">View privacy policy</a>
-                        <a class="link2" href="#">View privacy policy</a>
+                        <a 
+                            class="link1" 
+                            href="#">
+                                View privacy policy
+                        </a>
+                        <a 
+                            class="link2" 
+                            href="#">
+                                View privacy policy
+                        </a>
                     </div>
                     <button class="play-video-button">
                         <a href="#">Get Started</a>
@@ -421,7 +512,143 @@
                 </div>
             </form>
         </section>
-
+        <footer>
+            <div class="footer-links flex-container">
+                <div class="logo">
+                    <img 
+                        src="./saas-project-assets/project_logo/logo.svg" 
+                        alt="Front logo">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-location-arrow"></i> 
+                                153 Williamson Plaza, Maggieberg
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-phone"></i> 
+                                +1 (062) 109-9222
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Career<span>We're hiring</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Customers</a>
+                        </li>
+                        <li>
+                            <a href="#">Hire us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="features">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">Release notes</a>
+                        </li>
+                        <li>
+                            <a href="#">Integrations</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="documentation">
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Docs</a>
+                        </li>
+                        <li>
+                            <a href="#">Status</a>
+                        </li>
+                        <li>
+                            <a href="#">API Refernce</a>
+                        </li>
+                        <li>
+                            <a href="#">Tech Requirements</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-circle-info"></i>  
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-regular fa-circle-user"></i>  
+                                Your Account 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="privacy-footer">
+                <div class="policy-links flex-container">
+                    <div class="flex-container">
+                        <p>Privacy & Policy</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p>Terms</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p>Site Map</p>
+                    </div>
+                    <div class="flex-container">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-google-plus"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-github"></i>
+                        <select name="county">
+                            <option value="us">
+                                <img 
+                                    src="https://img.icons8.com/?size=100&id=15532&format=png&color=000000" 
+                                    alt="usa flag">
+                                United States
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="policy-statement flex-container">
+                    <p>
+                        <i class="fa-regular fa-copyright"></i>
+                        Front. 2022 Responsive designs. All rights reserved.
+                    </p>
+                    <p>
+                        When you visit or interact with out sites, 
+                        services or tools, we or out authorised service 
+                        providers may use cookies for storing information 
+                        to help provide you with a better, faster and 
+                        safet experience and for marketing purposes.
+                    </p>
+                </div>
+                
+            </div>
+        </footer>
 
 
 
@@ -442,5 +669,7 @@
             }
             window.addEventListener("scroll", colorNavBG);
         </script>
+        <!-- fetch font awesome kit -->
+        <script src="https://kit.fontawesome.com/2a4e61e323.js" crossorigin="anonymous"></script>
     </body>
 </html>
