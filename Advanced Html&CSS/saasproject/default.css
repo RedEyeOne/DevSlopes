@@ -24,7 +24,7 @@ h2 {
     height: 100%;
     padding: 0;
 }
-.flex-container, .grid-container, nav, .software-people{
+.flex-container, .grid-container, .software-people{
     padding: 0 2rem;
 }
 .flex-container {
@@ -55,4 +55,7 @@ button {
     color: var(--white);
     font-weight: 900;
     background-color: var(--water);
+}
+button:hover {
+    background-color: var(--gradient-grey);
 }

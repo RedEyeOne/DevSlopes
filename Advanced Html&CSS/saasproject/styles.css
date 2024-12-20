@@ -6,14 +6,16 @@ nav {
     align-content: center;
     position: sticky;
     top: 2.5rem;
-    width: 95%;
-    z-index: 1000;
+    width: 100vw;
+    z-index: 10000;
     background-color: transparent;
     font-size: .9rem;
     font-weight: 500;
     transition: all 0.3s ease;
+
 }
 .project-logo {
+    padding-left: 2rem;
     width: 10rem;
     display: flex;
     align-items: center;
@@ -33,7 +35,7 @@ nav ul{
     align-items: center;
 }
 .buy-now {
-    margin-left: 2rem;
+    margin-right: 2rem;
     background-color: var(--water);
 }
 
@@ -503,6 +505,7 @@ h2 {
     background-color: #344f7e;
     display: flex;
     flex-direction: row;
+    padding: 2rem 0;
 }
 .hire-us-text {
     margin-left: 3rem;
@@ -510,7 +513,7 @@ h2 {
 }
 .hire-us-underlined {
     max-width: 10rem;
-    -top: 0;
+    top: 0;
     padding-bottom: 3rem;
     border-bottom: 1px solid var(--white);
 }
@@ -526,14 +529,35 @@ h2 {
 .hire-us-text .job-title {
     margin-top: .3rem;
 }
+.employee-imgs {
+    display: flex;
+    gap: 2rem;
+    flex-basis: start;
+    margin-top: 2.5rem;
+    padding: 0;
+}
+.employee-imgs img{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 5pc;
+}
+.employee-imgs img:nth-child(3) {
+    position: relative;
+    top: -16%;
+    width: 3.3rem;
+    height: 3.3rem;
+}
 /* hire us form section */
 .blue-bg-form form {
     background-color: var(--white);
     border-radius: 5px;
     position: relative;
     right: -1.5rem; /* adjust form horizontal position */
-    height: 100%;
     width: 50%
+}
+.blue-bg-form form h4 {
+    text-align: center;
+    max-width: 90%;
 }
 .form-grid {
     margin: 2rem;
@@ -550,14 +574,15 @@ h2 {
     grid-template-rows: auto;
     gap: 1rem; 
 }
-
 .form-grid > input, .form-grid > select { 
+    font-size: 1rem;
     width: 90%;
     height: 2rem;
     border-radius: 5px;
     border: 2px solid #ebe6e6c0;
     background-color: var(--white);
     padding: 0 .5rem;
+    font-family: sans-serif;
 }
 .first-name {grid-area: first}
 .last-name {grid-area: last}
@@ -570,13 +595,29 @@ h2 {
 .privacy-policy-links .link1 {
     color: rgb(117, 118, 121);
     text-decoration: dotted underline;
-    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: .2rem;
+}
+.form-grid textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid #ebe6e6c0;
+    resize: none;
+    font-family: sans-serif;
+
+}
+.privacy-policy-links .link1:hover {
+    color: rgb(182, 184, 189);
 }
 .privacy-policy-links .link2 {
     color: var(--water);
-    
     text-decoration: dotted underline;
-    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: .2rem;
+}
+.privacy-policy-links .link2:hover {
+    color: #90b6f3;
 }
 .privacy-policy-links {
     grid-area: links;
@@ -587,6 +628,9 @@ h2 {
     grid-area: privacy-policy-check; 
     display: flex;
     gap: 1rem;
+}
+.form-grid .play-video-button {
+    margin-top: 3rem;
 }
 .form-grid .play-video-button a {
     color: var(--white);
