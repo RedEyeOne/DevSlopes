@@ -310,11 +310,13 @@ h2 {
 .video-player {
     margin: 0 2rem;
     margin-top: 7rem;
+    position: relative;
 }
 .video-player img {
     max-width: 100%;
     height: auto;
     z-index: 100;
+
 }
 .dynamic-play-button {
     overflow: hidden;
@@ -323,9 +325,9 @@ h2 {
     height: 3rem;
     z-index: 1000;
     background-color: var(--white);
-    position: relative;
-    top: -14.2rem;
-    right: -28.6rem;
+    position: absolute;
+    bottom: 44%;
+    right: 48%;
     transition: all 0.4s ease;
     box-shadow: 0 0 5px 1px var(--gradient-grey);
 
@@ -511,9 +513,10 @@ h2 {
     display: flex;
     flex-direction: row;
     padding: 2rem 0;
+    justify-content: space-between;
 }
 .hire-us-text {
-    margin-left: 3rem;
+    margin-left: 2rem;
     flex-direction: column;
 }
 .hire-us-underlined {
@@ -556,8 +559,8 @@ h2 {
 .blue-bg-form form {
     background-color: var(--white);
     border-radius: 5px;
-    position: relative;
-    right: -3%; /* adjust form horizontal position */
+    margin-right: 1rem;
+    max-width: 40rem;
     width: 50%
 }
 .blue-bg-form form h4 {
@@ -703,7 +706,9 @@ h2 {
     color: var(--water);
 }
 .right-footer {
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-right: 0;
+    padding-right: 0;
 }
 .right-footer .i-container {
     height: 1.88rem;
