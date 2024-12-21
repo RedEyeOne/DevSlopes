@@ -610,7 +610,6 @@ h2 {
     border: 2px solid #ebe6e6c0;
     resize: none;
     font-family: sans-serif;
-
 }
 .privacy-policy-links .link1:hover {
     color: rgb(182, 184, 189);
@@ -679,8 +678,70 @@ h2 {
 .privacy-footer {
     color: var(--gradient-grey);
     text-align: center;
-
+}
+.policy-links {
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.left-footer  {
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+.left-footer i {
+    font-size: 0.5rem;
+}
+.left-footer a {
+    color: var(--gradient-grey);
+    text-decoration: none;
+}
+.left-footer a:hover {
+    color: var(--water);
+}
+.right-footer {
+    gap: 1rem;
+}
+.right-footer .i-container {
+    height: 1.88rem;
+    width: 1.8rem;
+    border-radius: 5px;
+    background-color: var(--gradient-grey);
+}
+.right-footer .i-container:hover {
+    background-color: #e2e7f1;
+}
+.right-footer i{
+    position: relative;
+    top: -0.15rem;
+    right: 2%;
+    font-size: 2.2rem;
+    color: #e2e7f1;
+}
+.right-footer i:hover {
+    color: var(--gradient-grey);
+}
+.right-footer select {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #e2e7f1;
+    height: 2.2rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Adjust position */
+    background-size: 20px auto;
 }
 .policy-statement {
     flex-direction: column;
+    align-items: center;
+    max-width: 45rem;
+    place-content: center;
+    margin: 0 auto;
+}
+.policy-statement p {
+    justify-self: center;
 }
