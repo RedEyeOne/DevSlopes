@@ -1,43 +1,125 @@
 /* iPads and Tablets - portrait mode */
 @media screen and (max-width: 768px){
-    [aria-controls="navbarDropdown"] {
-        display: block;
-        position: absolute;
-        right: var(--size-20);
-        top: var(--size-10);
-        outline: none;
-        background-color: transparent;
-        border: 1px solid transparent;
-    }
-    .navbar-toggler > span {
-        color: var(--white);
-        font-size: var(--size-20);
-        cursor: pointer;
-        pointer-events: none;
-
-    }
-    [aria-expanded="false"] ~ ul {
+    /* set navbar */
+    #nav-ul {
         display: none;
     }
-    [aria-expanded="true"] ~ ul {
-        display: block;
+    .nav-dropdown {
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
-    .navbar-nav {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: var(--size-50);
-        background-image: linear-gradient(to right, transparent, rgba(255,255,255, 0.7));
-        width: 100%;
-        text-align: right;
-        box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.4);
+    .nav-dropdown i {
+        align-self: center;
+        color: var(--gradient-grey);
+        font-size: 1.5rem;
+        margin-right: 2rem;
     }
+    .nav-dropdown[aria-expanded="false"] ~ #nav-ul {
+        display: none;
+    }
+    .nav-dropdown[aria-expanded="true"] ~ #nav-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
     [aria-expanded="true"] ~ ul li a {
         margin-right: var(--size-20);
         color:  var(--font-color-dark);
     }
-    footer .footer-col:nth-child(3) {
-        grid-column: 1/3;
+    /* header */
+    .header-display-container {
+        text-align: center;
+        padding-top: 8rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-display-container .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    h1 {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .key-benefits-text {
+        padding-top: 12rem;
+    }
+    .header-buttons {
+    justify-content: center;
+    }
+    .header-logos {
+        position: relative;
+        left: -11.5%;
+        bottom: -3rem;
+    }
+    /* key benefit cards */
+    .key-benefits-cards {
+        row-gap: 2rem;
+    }
+    .key-benefits-cards .card {
+        flex-wrap: wrap;
+        min-width: 45%;
+        flex: 1 1 45%;
+    }
+    /* software people */
+    .software-people-text {
+        text-align: center;
+    }
+    .software-people-text h3{
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .software-people {
+        padding-top: 2rem;
+        flex-direction: column;
+    }
+    .software-people-text .play-video-button {
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+    /* exec director */
+    .director-container {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .director-container .director-text {
+        padding-top: 0;
+    }
+    .director-container > * {
+        text-align: center;
+    }
+    /* pricing cards */
+    .pricing-cards-container {
+        flex-wrap: wrap;
+    }
+    .popout-card {
+        min-width: 85%;
+        max-height: 20rem;
+        margin-bottom: 2rem;
+    }
+    /* form section */
+    .blue-bg-form {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hire-us-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .blue-bg-form form {
+        width: 90%;
+        position: block;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 480px) {
