@@ -657,7 +657,12 @@ h2 {
 /* Footer links section */
 .footer-links {
     margin-top: 5rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+.footer-link-container {
+    flex: 1;
+    gap: 2rem;
+    justify-content: space-evenly;
 }
 .footer-links .company span {
     font-size: .7rem;
@@ -670,6 +675,9 @@ h2 {
 }
 .footer-links .logo img {
     width: 6rem;
+}
+footer .logo {
+    margin-left: 2rem;
 }
 .footer-links ul {
     text-align: left;
